@@ -15,13 +15,11 @@ class RecipeListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = ComposeView(requireContext())
-        view.apply {
+        return ComposeView(requireContext()).apply {
             setContent {
                 Text(text = "Composable fragment")
             }
         }
 
-        return view
     }
 }
