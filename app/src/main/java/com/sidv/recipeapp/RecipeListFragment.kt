@@ -40,6 +40,8 @@ class RecipeListFragment : Fragment() {
                         style = TextStyle(fontSize = 21.sp),
                     )
                     Spacer(modifier = Modifier.padding(10.dp))
+                    CircularProgressIndicator()
+                    Spacer(modifier = Modifier.padding(10.dp))
                     Button(onClick = {
                         findNavController()
                             .navigate(R.id.action_recipeListFragment_to_recipeFragment)
