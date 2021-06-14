@@ -6,7 +6,7 @@ import kotlinx.parcelize.Parcelize
 
 
 @Parcelize
-data class Recipe(
+data class  Recipe(
     val id: Int? = null,
     val title: String? = null,
     val publisher: String? = null,
